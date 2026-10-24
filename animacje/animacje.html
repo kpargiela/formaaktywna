@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma aktywna - Animacje</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>#loading {
+            display: block;
+            background: #fff;
+            background-image: url(animacje/img/spinner.svg);
+            height: 100%;
+            background-size: 20%;
+            background-position: center;
+            width: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+ 
+
+    <div id="page">
+        <header>
+            <a href="../index.html" class="home btn">formaaktywna.pl</a>
+        </header>
+
+        <div id="inicjum" class="radial">
+
+            <div class="animation">
+                <img class="inicjum-img" src="img/inicjum.png" alt="Inicjum">
+                <div class="radial-ellipse"></div>
+                <h2 class="title">Inicjum</h2>
+            </div>
+            <div class="controls">
+                <div class="slider-wrapper">
+                    <input type="range" min="0" max="360" value="180" class="radial-ellipse-rotate-slider">
+                    <!-- <span class="rotate">Obróć</span> -->
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range" min="10" max="80" value="10" class="radial-ellipse-width-slider">
+                    <!-- <span class="rotate">Rozszerz</span> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="transform-circle">
+            <div class="rozdzielnosc animation">
+                <object data="img/rozdzielnosc.svg" type="image/svg+xml" id="rozdzielnosc" class="rozdzielnosc-img" width="100%" height="100%"></object>
+                <div class="radial-circle"></div>
+                <h2 class="title">Rozdzielność</h2>
+            </div>
+            <div class="sliders-wrapper">
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="0" max="360" value="180" class="rotate-slider rotate-circle-left">
+                    <button class="default circle-left">Reset</button>
+                </div>
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="0" max="360" value="180" class="rotate-slider rotate-circle-line">
+                    <button class="default circle-line">Reset</button>
+                </div>
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="0" max="360" value="180" class="rotate-slider rotate-circle-right">
+                    <button class="default circle-right">Reset</button>
+                </div>
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="20" max="100" value="0" class="radial-circle-size-slider">
+                    <!-- <button class="default size">Reset</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="logos">
+
+            <div class="content-wrapper">
+
+                <div class="objects-panel-wrapper">
+                    <div class="objects-panel">
+
+                        <div class="circles">
+                            <div class="object">
+                                <img class="panel-img float-circle" src="img/objects/float-circle.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img float-circle-second" src="img/objects/float-circle-second.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img float-circle-blue2" src="img/objects/float-circle-blue2.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img float-circle-transparent" src="img/objects/float-circle.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img float-circle-second-transparent" src="img/objects/float-circle-second.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img float-circle-blue-transparent" src="img/objects/float-circle-blue.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img float-circle-grey-transparent" src="img/objects/float-circle-grey.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="rings">
+                            <div class="object">
+                                <img class="panel-img ring-cream" src="img/objects/logos-ring-cream.png" alt="">
+                                <img class="float-img ring-cream" src="img/objects/logos-float-ring-cream.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img ring-blue-darken" src="img/objects/logos-ring-blue-darken.png" alt="">
+                                <img class="float-img ring-blue-darken" src="img/objects/logos-float-ring-blue-darken.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img ring-blue" src="img/objects/logos-ring-blue.png" alt="">
+                                <img class="float-img ring-blue" src="img/objects/logos-float-ring-blue.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img ring-blue-cream" src="img/objects/logos-ring-blue-cream.png" alt="">
+                                <img class="float-img ring-blue-cream" src="img/objects/logos-float-ring-blue-cream.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img ring-blue-cream-rotate" src="img/objects/logos-ring-blue-cream.png" alt="">
+                                <img class="float-img ring-blue-cream-rotate" src="img/objects/logos-float-ring-blue-cream.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img ring-blue-brown" src="img/objects/logos-ring-brown.png" alt="">
+                                <img class="float-img ring-blue-brown" src="img/objects/logos-float-ring-brown.png" alt="">
+                            </div>
+                            <div class="object">
+                                <img class="panel-img ring-blue-grey" src="img/objects/logos-ring-grey.png" alt="">
+                                <img class="float-img ring-blue-grey" src="img/objects/logos-float-ring-grey.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <span class="title">Kliknij w obiekt <br> aby go dodać</span>
+                </div>
+
+                <div class="animation box-wrapper">
+                    <div class="box box-first"><img src="img/3.jpg" alt=""></div>
+                    <div class="box box-second"></div>
+                    <div class="box box-third"></div>
+                    <div class="box box-fourth"></div>
+                    <div class="box box-fifth"></div>
+                    <div class="box box-sixth"></div>
+                    <div class="box box-seventh"></div>
+                    <div class="box box-eight"></div>
+                    <div class="box box-ninth"></div>
+
+                    <input type="range" min="0" max="66.66" step="0.01" value="33.33" class="float-slider-x">
+                    <input type="range" min="0" max="66.66" step="0.01" value="33.33" class="float-slider-y">
+                    <input type="range" min="0" max="40" step="0.01" value="33.33" class="float-slider-mobile-x">
+                    <input type="range" min="0" max="80" step="0.01" value="33.33" class="float-slider-mobile-y">
+                    <h2 class="title">Logos</h2>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="precyzja" class="wrapper precyzja">
+
+            <div class="animation">
+                <img class="bg-img" src="img/precyzja-bg.jpg" alt="">
+                <img class="circle" src="img/precyzja-circle.png" alt="">
+                <div class="radial-circle"></div>
+            </div>
+            <h2 class="title">Precyzja</h2>
+            <div class="sliders-wrapper">
+                <div class="slider-wrapper">
+                    <input type="range" min="100" max="120" value="100" step="0.01" class="light-slider light-circle-slider">
+                    <!-- <button class="default light-circle-reset">Reset</button> -->
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range" min="100" max="120" value="100" step="0.01" class="light-slider light-bg-slider">
+                    <!-- <button class="default light-bg-reset">Reset</button> -->
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range" min="0" max="100" value="0" class="radial-circle-size-slider">
+                    <!-- <button class="default light-radial-reset">Reset</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="metanoja" class="metanoja">
+
+
+            <div class="animation">
+                <img class="metanoja-bg" src="img/metanoja-bg.jpg" alt="">
+                <img class="metanoja-circle" src="img/metanoja-circle.png" alt="">
+                <div class="radial-ellipse"></div>
+
+
+            </div>
+            <h2 class="title">Metanoja</h2>
+            <div class="sliders-wrapper">
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="0" max="360" value="180" step="0.01" class="metanoja-slider metanoja-circle-slider">
+                    <button class="default metanoja-circle-reset">Reset</button>
+                </div>
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="0" max="360" value="180" step="0.01" class="metanoja-slider metanoja-bg-slider">
+                    <button class="default metanoja-bg-reset">Reset</button>
+                </div>
+                <div class="rotate-slider-wrapper">
+                    <input type="range" min="30" max="100" value="0" step="0.01" class="radial-ellipse-width-slider">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading">
+    </div>
+
+<script src="scripts.js"></script>
+<script src="kit.fontawesome.com/0981baac37.js" crossorigin="anonymous"></script>
+
+
+<script>
+    function preloaderFn() {
+        document.getElementById("page").style.display = "block";
+        document.getElementById("loading").style.display = "none";
+    }
+</script>
+
+</html>

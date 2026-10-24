@@ -1,0 +1,917 @@
+@import url('../../../../20220205035258cs_/https%EF%B9%95/fonts.googleapis.com/css2%EF%B9%96family=Open+Sans%EF%B9%95ital,wght@0,300%EF%B9%940,400%EF%B9%940,600%EF%B9%940,700%EF%B9%940,800%EF%B9%941,300%EF%B9%941,400%EF%B9%941,600%EF%B9%941,700%EF%B9%941,800&display=swap.css');
+
+@import url('../../../../20220205033735cs_/https%EF%B9%95/fonts.googleapis.com/css2%EF%B9%96family=Roboto%EF%B9%95ital,wght@0,100%EF%B9%940,300%EF%B9%940,400%EF%B9%940,500%EF%B9%940,700%EF%B9%940,900%EF%B9%941,100%EF%B9%941,300%EF%B9%941,400%EF%B9%941,500%EF%B9%941,700%EF%B9%941,900&display=swap.css');
+
+
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(208, 211, 212, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h1,
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}
+
+.description span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.description h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.description h3 {
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.description.hidden {
+    display: none;
+}
+
+/* KONTAKT */
+
+section.contact {
+    height: 20vh;
+    margin-top: 20vh;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    border: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 20vw;
+    padding: 10px 20px;
+}
+
+textarea {
+    min-height: 10vw;
+    min-width: 30vw;
+    margin: 80px;
+}
+
+ul.errors {
+    width: 20vw;
+    padding: 20px;
+    background-color: #FFD4DE;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+ul.errors li {
+    list-style: none;
+    line-height: 30px;
+    color: #F70053;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    background: #fff;
+    font-size: 0.8em;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 100;
+    height: 100%;
+    cursor: pointer;
+    max-width: 272px;
+    margin: 10px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.artist {
+    margin-bottom: 20px;
+}
+
+header .top {
+    display: flex;
+    margin: 2% 7vw 5%;
+    font-size: 1.4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .top .left {
+    display: flex;
+    flex-direction: column;
+}
+
+header .mail {
+    font-size: 0.7em;
+    color: #000;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/* header span {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+} */
+
+.prolog {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 4vh;
+    padding-top: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .prolog-item-wrapper {
+    width: 13vw;
+    display: flex;
+} */
+
+.prolog-item {
+    width: 13vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.prolog-item img {
+    width: 100%;
+    opacity: 100%;
+    transition: 0.3s filter;
+    -webkit-transition: 0.3s filter;
+    -moz-transition: 0.3s filter;
+    -ms-transition: 0.3s filter;
+    -o-transition: 0.3s filter;
+}
+
+.prolog-item img:hover {
+    filter: brightness(1.2);
+}
+
+.prolog-item img.active {
+    opacity: 50%;
+}
+
+.prolog-item span {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    letter-spacing: 6px;
+    margin-top: 40px;
+    font-weight: 300;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.content {
+    width: 95vw;
+    margin: 200px auto;
+}
+
+.content .wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.content .left-col {
+    width: 35vw;
+}
+
+.content .right-col {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .img-wrapper {
+    width: 50%;
+}
+
+.content img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (min-width: 1400px) {
+    .content .img-wrapper {
+        width: 40%;
+    }
+}
+
+.content .text {
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content .details {
+    display: flex;
+    margin: 10px 0;
+    align-self: flex-end;
+    margin-right: 10vw;
+}
+
+.content .title {
+    font-size: 1.7em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.content .btn {
+    width: 120px;
+    text-align: center;
+    letter-spacing: 6px;
+    height: auto;
+    background-color: #fff;
+    color: #000;
+    margin: 40px auto;
+    justify-content: center;
+    display: flex;
+    font-weight: 400;
+}
+
+.content .gallery {
+    display: flex;
+    width: 100%;
+    margin-top: 160px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content .gallery img {
+    width: 20%;
+}
+
+/* lightbox */
+
+.lightbox {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    object-fit: cover;
+    z-index: 1;
+    align-items: center;
+}
+
+.lightbox .miniatures {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    overflow-x: scroll;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    overflow: hidden;
+}
+
+.lightbox .miniature {
+    width: 10%;
+    display: flex;
+    object-fit: cover;
+    margin: 3px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.lightbox .miniature.active {
+    filter: sepia(1.2);
+    -webkit-filter: sepia(1.2);
+}
+
+.lightbox .lightbox-current-img {
+    width: auto;
+    height: 80vh;
+    margin-bottom: 15vh;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.lightbox .lightbox-previous-img,
+.lightbox .lightbox-next-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.btn-fullscreen,
+.btn-close {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.btn-fullscreen {
+    left: 10px;
+}
+
+.btn-close {
+    right: 10px;
+}
+
+.lightbox-preview-btns {
+    width: 15%;
+    height: auto;
+}
+
+.description {
+    width: 100%;
+    margin: 80px auto;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-indent: 20px;
+}
+
+.description p {
+    padding: 20px 20vw;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.description .workspace-wrapper {
+    width: 30vw;
+    margin: 40px auto;
+}
+
+.description .workspace-img {
+    width: 100%
+}
+
+.description .workspace-title {
+    margin: 0;
+    font-style: italic;
+}
+
+.description p:first-of-type {
+    padding: 80px 20vw;
+}
+
+.btn-close-content {
+    display: none;
+}
+
+.screenshots {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.screenshots .row {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 4vw auto;
+}
+
+.screenshots .row.metanoja {
+    width: 80%;
+}
+
+.screenshots .row.metanoja .screenshot:nth-child(1),
+.screenshots .row.metanoja .screenshot:nth-child(2) {
+    width: 17%;
+    height: 17%;
+    align-self: center;
+}
+
+.screenshots .row.metanoja .screenshot:nth-child(3),
+.screenshots .row.metanoja .screenshot:nth-child(4) {
+    width: 24%;
+}
+
+.screenshots .screenshot {
+    width: 17%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.footer .mkidn-logo {
+    width: 27vh;
+    margin-bottom: 80px;
+}
+
+header.bio {
+    display: flex;
+    margin: 2% auto 0 auto;
+    font-size: 1.4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.biography {
+    margin-top: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.biography .content-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+    margin-top: 25vh;
+    align-content: center;
+    position: relative;
+    height: auto;
+}
+
+.biography .img {
+    height: 90%;
+    left: 14vw;
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+}
+
+.biography span {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-top: 65px;
+    padding-right: 6px;
+    font-size: 1.3em;
+}
+
+.biography .text {
+    width: 40vw;
+    margin: 0;
+    text-align: left;
+    background: #fff;
+    line-height: 1.4em;
+    margin-right: 10vw;
+    padding: 70px 0 70px 0;
+}
+
+@media only screen and (max-width: 1920px) {
+    .biography .img {
+        height: 80%;
+        left: 10vw;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .biography .img {
+        height: 72%;
+        left: 0;
+    }
+
+    .biography .text {
+        margin-right: 5vw;
+    }
+
+    .content .text {
+        text-align: left;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .biography .content-wrapper {
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        margin-top: 10vh;
+        padding: 50px;
+        align-content: center;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biography .img {
+        width: 40vw;
+        height: 40vw;
+        margin-right: 0;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .biography span {
+        padding-top: 0;
+        padding-right: 0;
+        margin-top: 40px;
+    }
+
+    .biography .text {
+        width: 80vw;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .biography .img {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .biography .text {
+        width: 80vw;
+    }
+}
+
+header.home {
+    display: flex;
+    margin: 0;
+    font-size: 1.4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    height: auto;
+    /* position: fixed; */
+    z-index: 2;
+    left: 2%;
+    top: 2%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .top {
+        align-items: center;
+    }
+
+    .prolog-item span {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .description .workspace-wrapper {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screenshots .row {
+        display: flex;
+        width: 60vw;
+        height: 60vw;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .screenshots .screenshot {
+        width: 40%;
+        object-fit: contain;
+    }
+
+    .screenshots .row.metanoja {
+        width: 80vw;
+        height: 80vw;
+        justify-content: space-evenly;
+    }
+
+    .screenshots .row.metanoja .screenshot:nth-child(1),
+    .screenshots .row.metanoja .screenshot:nth-child(2) {
+        width: 30%;
+        margin: 0 3%;
+        height: 30%;
+        align-self: center;
+    }
+
+    .screenshots .row.metanoja .screenshot:nth-child(3),
+    .screenshots .row.metanoja .screenshot:nth-child(4) {
+        width: 40%;
+    }
+
+    input,
+    textarea {
+        width: 40vw;
+    }
+}
+
+
+/* responsive < 900px */
+
+@media only screen and (max-width: 900px) {
+
+    .btn-close-content {
+        position: absolute;
+        width: 100vw;
+        top: 1vw;
+        right: 4vw;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3em;
+        align-items: center;
+    }
+
+    header .top {
+        justify-content: center;
+        height: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+
+    .prolog-item {
+        width: 30vw;
+        margin: 20px 5vw;
+    }
+
+    .prolog-item span {
+        font-size: 2.2vw;
+    }
+
+    .content {
+        position: fixed;
+        width: 100vw;
+        min-height: 100vh;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        margin: 0;
+        background: #E8E8E9;
+    }
+
+    .content .wrapper {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10vh;
+    }
+
+    .content img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .content .right-col {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .content .left-col {
+        width: 95%;
+        margin: 0;
+    }
+
+    .description p:first-of-type {
+        padding: 80px 10vw;
+    }
+
+    .description p {
+        padding: 20px 10vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    section.contact {
+        margin-top: 10vh;
+    }
+
+    input,
+    textarea {
+        width: 80vw;
+    }
+
+    textarea {
+        min-height: 40vw;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-weight: 400;
+        font-size: 0.7em;
+        margin: 10px auto;
+    }
+
+    .description h2,
+    .description h3 {
+        font-weight: 300;
+    }
+
+    .description p {
+        font-weight: 300;
+    }
+
+    header .top {
+        justify-content: center;
+        height: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    header .top .btn {
+        height: auto;
+    }
+
+    header .top .menu {
+        height: auto;
+    }
+
+    .content .right-col {
+        padding: 0;
+    }
+
+    .content .text {
+        text-align: left;
+        width: 70%;
+    }
+
+    .prolog-item {
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        margin: 3% auto;
+        justify-content: space-evenly;
+    }
+
+    .prolog-item img {
+        width: 40%;
+    }
+
+    .prolog-item span {
+        font-size: 1em;
+        margin-top: 0;
+        align-self: center;
+        width: fit-content;
+        height: auto;
+    }
+
+    .description {
+        text-align: left;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 30%;
+        width: 60vw;
+    }
+
+    .footer .mkidn-logo {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .screenshots .row {
+        height: auto;
+        margin: 10% auto;
+    }
+
+    .screenshots .screenshot {
+        width: 100%;
+        margin: 10% auto;
+    }
+
+    .screenshots .row.metanoja {
+        width: 60vw;
+        height: auto;
+    }
+
+    .screenshots .row.metanoja .screenshot:nth-child(1),
+    .screenshots .row.metanoja .screenshot:nth-child(2) {
+        width: 100%;
+        margin: 10% auto;
+        height: auto;
+    }
+
+    .screenshots .row.metanoja .screenshot:nth-child(3),
+    .screenshots .row.metanoja .screenshot:nth-child(4) {
+        width: 140%;
+        margin: 10% auto;
+    }
+
+}
+/*
+     FILE ARCHIVED ON 03:35:55 Feb 05, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:53:04 Nov 19, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 308.122
+  exclusion.robots: 0.1
+  exclusion.robots.policy: 0.09
+  cdx.remote: 0.064
+  esindex: 0.012
+  LoadShardBlock: 263.249 (3)
+  PetaboxLoader3.datanode: 267.337 (4)
+  PetaboxLoader3.resolve: 80.488 (2)
+  load_resource: 173.078
+*/

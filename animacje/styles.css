@@ -1,0 +1,1426 @@
+@import url('fonts.googleapis.com/css2%EF%B9%96family=Open+Sans%EF%B9%95ital,wght@0,300%EF%B9%940,400%EF%B9%940,600%EF%B9%940,700%EF%B9%940,800%EF%B9%941,300%EF%B9%941,400%EF%B9%941,600%EF%B9%941,700%EF%B9%941,800&display=swap.css');
+
+@import url('fonts.googleapis.com/css2%EF%B9%96family=Roboto%EF%B9%95ital,wght@0,100%EF%B9%940,300%EF%B9%940,400%EF%B9%940,500%EF%B9%940,700%EF%B9%940,900%EF%B9%941,100%EF%B9%941,300%EF%B9%941,400%EF%B9%941,500%EF%B9%941,700%EF%B9%941,900&display=swap.css');
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(208, 211, 212, 0.5);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    height: auto;
+    margin: 40px;
+    position: absolute;
+    z-index: 2;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    background: #fff;
+    font-size: 0.8em;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 100;
+    height: 100%;
+    cursor: pointer;
+    max-width: 272px;
+}
+
+.rotate-slider-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.rotate-slider-wrapper.first {
+    margin-top: 200px;
+}
+
+.rotate-slider-wrapper .default {
+    position: absolute;
+    right: -80px;
+    top: 10px;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.precyzja .radial-circle {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-image: radial-gradient(circle farthest-side, #fff, transparent);
+}
+
+.radial-circle-size-slider {
+    width: 100%;
+}
+
+
+.radial {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20vh;
+}
+
+.radial .animation {
+    width: 75vh;
+    height: 75vh;
+    position: relative;
+}
+
+.radial .inicjum-img {
+    height: 100%;
+    width: 100%;
+}
+
+.radial .radial-ellipse {
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: calc(50% - 6%);
+    opacity: 0.5;
+    background-image: radial-gradient(ellipse farthest-side, #fff, transparent);
+}
+
+.radial .radial-circle {
+    width: 65vh;
+    height: 65vh;
+    left: calc(50% - 25.5vh);
+    top: calc(50% - 25.5vh);
+}
+
+.radial .controls {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25vw;
+    align-self: flex-end;
+    margin-right: 7vw;
+}
+
+.radial .slider-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.radial .controls .radial-ellipse-rotate-slider {
+    width: 100%;
+}
+
+.radial .controls .rotate {
+    position: absolute;
+    right: -100px;
+    width: 80px;
+}
+
+.radial input[type=range].radial-ellipse-rotate-slider::-webkit-slider-thumb {
+    background: rgb(167, 197, 223);
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 182, 209, 1) 33%, rgba(217, 182, 209, 1) 100%); */
+    width: 10px;
+    border-radius: 100%;
+}
+
+.radial input[type=range].radial-ellipse-rotate-slider::-moz-range-thumb {
+    background: rgb(167, 197, 223);
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 182, 209, 1) 33%, rgba(217, 182, 209, 1) 100%); */
+    width: 10px;
+    border-radius: 100%;
+}
+
+.radial input[type=range].radial-ellipse-rotate-slider::-ms-thumb {
+    background: rgb(167, 197, 223);
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 182, 209, 1) 33%, rgba(217, 182, 209, 1) 100%); */
+    width: 10px;
+    border-radius: 100%;
+}
+
+.radial input[type=range].radial-ellipse-width-slider::-webkit-slider-thumb {
+    background: #879cbe;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #879cbe 33%, #879cbe 100%);
+}
+
+.radial input[type=range].radial-ellipse-width-slider::-moz-range-thumb {
+    background: #879cbe;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #879cbe 33%, #879cbe 100%);
+}
+
+.radial input[type=range].radial-ellipse-width-slider::-ms-thumb {
+    background: #879cbe;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #879cbe 33%, #879cbe 100%);
+}
+
+/* ROZDZIELNOSC */
+
+.transform-circle .radial-circle {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle farthest-side, #fff, transparent);
+    opacity: 0;
+}
+
+.transform-circle {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    isolation: isolate;
+    z-index: 1;
+    margin: 10vh auto;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.transform-circle .animation {
+    width: 75vh;
+    height: 75vh;
+    position: relative;
+    /* background-image: url(img/rozdzielnosc-bg.jpg); */
+    background-size: contain;
+}
+
+.white-bg {
+    background: #fff;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.rozdzielnosc-img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.rozdzielnosc-img #line {
+    mix-blend-mode: unset !important;
+}
+
+.circle-left,
+.circle-line,
+.circle-right {
+    height: 100%;
+    transition: 0.3s all;
+}
+
+.transform-circle .title {
+    margin-top: 0;
+}
+
+.transform-circle .sliders-wrapper {
+    width: 25vw;
+    align-self: flex-end;
+    margin-right: 7vw;
+    margin-bottom: 80px;
+}
+
+.rotate-slider {
+    height: 40px;
+    z-index: 10;
+    width: 100%;
+}
+
+/* .rotate-circle-left {
+    top: calc(50% - 40px);
+    left: -60%;
+    transform: rotate(-90deg);
+}
+
+.rotate-circle-line {
+    bottom: -100px;
+    left: 0;
+}
+
+.rotate-circle-right {
+    top: calc(50% - 40px);
+    right: -60%;
+    transform: rotate(90deg);
+} */
+
+input[type=range].rotate-circle-line::-webkit-slider-thumb {
+    background: rgb(147, 60, 40);
+}
+
+input[type=range].rotate-circle-line::-moz-range-thumb {
+    background: rgb(147, 60, 40);
+}
+
+input[type=range].rotate-circle-line::-ms-thumb {
+    background: rgb(147, 60, 40);
+}
+
+input[type=range].rotate-circle-left::-webkit-slider-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/left-slider-icon.png');
+    background-size: contain;
+}
+
+input[type=range].rotate-circle-left::-moz-range-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/left-slider-icon.png');
+    background-size: contain;
+}
+
+input[type=range].rotate-circle-left::-ms-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/left-slider-icon.png');
+    background-size: contain;
+}
+
+input[type=range].rotate-circle-right::-webkit-slider-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/right-slider-icon.png');
+    background-size: contain;
+}
+
+input[type=range].rotate-circle-right::-moz-range-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/right-slider-icon.png');
+    background-size: contain;
+}
+
+input[type=range].rotate-circle-right::-ms-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/right-slider-icon.png');
+    background-size: contain;
+}
+
+.transform-circle input[type=range].radial-circle-size-slider::-webkit-slider-thumb {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(100, 153, 184, 1) 33%, rgba(100, 153, 184, 1) 100%);
+}
+
+.transform-circle input[type=range].radial-circle-size-slider::-moz-range-thumb {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(100, 153, 184, 1) 33%, rgba(100, 153, 184, 1) 100%);
+}
+
+.transform-circle input[type=range].radial-circle-size-slider::-ms-thumb {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(100, 153, 184, 1) 33%, rgba(100, 153, 184, 1) 100%);
+}
+
+
+/* LOGOS */
+
+#logos {
+    width: 100%;
+    height: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh;
+}
+
+#logos .content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+#logos .box-wrapper .title {
+    margin-top: 40px;
+}
+
+.objects-panel {
+    position: relative;
+    width: 20vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.objects-panel-wrapper .title {
+    margin: 50px auto;
+    font-size: 1em;
+    background: #fff;
+    height: 80px;
+    margin-top: 70px;
+    position: relative;
+    width: 20vw;
+    text-align: center;
+    letter-spacing: 6px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    line-height: 1.6em;
+}
+
+.objects-panel-wrapper .title:before {
+    border-bottom: 35px solid #fff;
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -35px;
+    width: 0;
+}
+
+.objects-panel .rings,
+.objects-panel .circles {
+    width: 50%;
+    height: 62vw;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.03);
+    direction: ltr;
+}
+
+.objects-panel .object {
+    position: relative;
+    width: 70%;
+    transition: 0.3s all;
+    margin: 20px;
+    background: #fff;
+    border-radius: 50%;
+    height: auto;
+}
+
+.objects-panel .object img {
+    height: 100%;
+    width: 100%;
+}
+
+.objects-panel .object .float-img {
+    display: none;
+}
+
+.objects-panel .object i {
+    position: absolute;
+    right: 1%;
+}
+
+.float-circle-transparent,
+.float-circle-second-transparent,
+.float-circle-blue-transparent,
+.float-circle-grey-transparent {
+    opacity: 0.5;
+}
+
+.ring-blue-cream-rotate {
+    transform: rotate(180deg);
+}
+
+.active {
+    transform: scale(1.25);
+}
+
+.added .wrapper {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.box-wrapper {
+    width: 80vw;
+    height: 80vw;
+    max-width: 80vh;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: 20vw;
+}
+
+.box {
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: unset;
+}
+
+
+.box-float {
+    top: 33.33%;
+    left: 33.33%;
+    z-index: 2;
+    opacity: 1;
+    position: absolute;
+    background: transparent;
+    transition: 1s all;
+    -webkit-transition: 0.3s left;
+    -moz-transition: 0.3s left;
+    -ms-transition: 0.3s left;
+    -o-transition: 0.3s left;
+}
+
+.box-second {
+    background: #6BA0CF;
+}
+
+.box-third {
+    /* background: #8bacc2; */
+    background: #8FB1C7;
+}
+
+.box-fourth {
+    background: #AD8868;
+    background: #B08A6A;
+}
+
+.box-fifth {
+    /* background: #6BA0AB; */
+    background: #70A7B3;
+}
+
+.box-sixth {
+    background: #ACC0CC;
+}
+
+.box-seventh {
+    background: #b39d98;
+}
+
+.box-eight {
+    /* background: #8DC0CC; */
+    background: #96C0CC;
+}
+
+.box-ninth {
+    background: #ccc;
+}
+
+.box-wrapper .float-slider-x {
+    width: 66.66%;
+    margin: 0px auto;
+    display: none;
+}
+
+.box-wrapper .float-slider-y {
+    width: 66.66%;
+    position: absolute;
+    right: -44%;
+    top: 48%;
+    transform: rotate(90deg);
+    display: none;
+}
+
+.box-wrapper .float-slider-mobile-x {
+    width: 80vw;
+    margin: 10px auto;
+    display: none;
+    /* position: absolute; */
+    bottom: -80px;
+    left: 0;
+}
+
+.box-wrapper .float-slider-mobile-y {
+    width: 120vw;
+    position: absolute;
+    right: -70vw;
+    top: calc(60vw - 25px);
+    transform: rotate(90deg);
+    display: none;
+}
+
+.box-wrapper .float-slider-x.active,
+.box-wrapper .float-slider-y.active {
+    display: block;
+}
+
+input[type=range].float-slider-x::-webkit-slider-thumb,
+input[type=range].float-slider-y::-webkit-slider-thumb {
+    background-color: #D0B38F;
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/move-horizontal.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type=range].float-slider-x::-moz-range-thumb,
+input[type=range].float-slider-y::-moz-range-thumb {
+    background-color: #D0B38F;
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/move-horizontal.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type=range].float-slider-x::-ms-thumb,
+input[type=range].float-slider-y::-ms-thumb {
+    background-color: #D0B38F;
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/move-horizontal.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type=range].float-slider-y::-webkit-slider-thumb {
+    background-color: #D0B38F;
+}
+
+input[type=range].float-slider-y::-moz-range-thumb {
+    background-color: #D0B38F;
+}
+
+input[type=range].float-slider-y::-ms-thumb {
+    background-color: #D0B38F;
+}
+
+/* PRECYZJA */
+
+.precyzja {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20vh;
+}
+
+.precyzja .animation {
+    width: 75vh;
+    height: 75vh;
+    position: relative;
+}
+
+.precyzja .bg-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.precyzja .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.precyzja .sliders-wrapper {
+    width: 25vw;
+    align-self: flex-end;
+    margin-right: 7vw;
+    position: absolute;
+    bottom: 40px;
+}
+
+.precyzja .slider-wrapper {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.precyzja .slider-wrapper.first {
+    margin-top: 200px;
+}
+
+/* .precyzja {
+    width: 50vh;
+    height: 50vh;
+    max-width: 50vw;
+    max-height: 50vw;
+    position: relative;
+    margin: 25vh auto;
+}
+
+.precyzja .bg-img {
+    height: 100%;
+    z-index: 1;
+}
+
+.precyzja .circle {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+} */
+
+.precyzja .light-slider {
+    width: 100%;
+}
+
+.precyzja input[type=range].light-circle-slider::-webkit-slider-thumb {
+    background-color: #D9B6D1;
+    /* background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/sun.png'); */
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precyzja input[type=range].light-circle-slider::-moz-range-thumb {
+    background-color: #D9B6D1;
+    /* background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/sun.png'); */
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precyzja input[type=range].light-circle-slider::-ms-thumb {
+    background-color: #D9B6D1;
+    /* background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/sun.png'); */
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precyzja input[type=range].light-bg-slider::-webkit-slider-thumb {
+    background-color: #D4C28F;
+    /* background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/sun.png'); */
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precyzja input[type=range].light-bg-slider::-moz-range-thumb {
+    background-color: #D4C28F;
+    /* background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/sun.png'); */
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precyzja input[type=range].light-bg-slider::-ms-thumb {
+    background-color: #D4C28F;
+    /* background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/sun.png'); */
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precyzja input[type=range].radial-circle-size-slider::-webkit-slider-thumb {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 182, 209, 1) 33%, rgba(217, 182, 209, 1) 100%);
+}
+
+.precyzja input[type=range].radial-circle-size-slider::-moz-range-thumb {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 182, 209, 1) 33%, rgba(217, 182, 209, 1) 100%);
+}
+
+.precyzja input[type=range].radial-circle-size-slider::-ms-thumb {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 182, 209, 1) 33%, rgba(217, 182, 209, 1) 100%);
+}
+
+
+/* METANOJA */
+
+.metanoja {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.metanoja .animation {
+    width: 60vh;
+    height: 60vh;
+    position: relative;
+    margin-top: -10vh;
+}
+
+.metanoja .metanoja-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.metanoja .metanoja-circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.metanoja .title {
+    position: absolute;
+    bottom: 70px;
+}
+
+.metanoja .sliders-wrapper {
+    width: 25%;
+    position: absolute;
+    right: 7vw;
+    bottom: 80px;
+}
+
+.metanoja .rotate-slider-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.metanoja .rotate-slider-wrapper.first {
+    margin-top: 200px;
+}
+
+.metanoja .metanoja-slider {
+    width: 100%;
+}
+
+.metanoja-circle-slider {
+    margin-top: 10vh;
+}
+
+.metanoja input[type=range].metanoja-circle-slider::-webkit-slider-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/metanoja-circle-icon.png');
+    background-size: contain;
+}
+
+.metanoja input[type=range].metanoja-circle-slider::-moz-range-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/metanoja-circle-icon.png');
+    background-size: contain;
+}
+
+.metanoja input[type=range].metanoja-circle-slider::-ms-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/metanoja-circle-icon.png');
+    background-size: contain;
+}
+
+.metanoja input[type=range].metanoja-bg-slider::-webkit-slider-thumb {
+    background: linear-gradient(180deg, rgb(97, 177, 169) 0%, rgb(97, 177, 169) 50%, rgb(219, 140, 93) 50%, rgb(219, 140, 93) 100%);
+}
+
+.metanoja input[type=range].metanoja-bg-slider::-moz-range-thumb {
+    background: linear-gradient(180deg, rgb(97, 177, 169) 0%, rgb(97, 177, 169) 50%, rgb(219, 140, 93) 50%, rgb(219, 140, 93) 100%);
+}
+
+.metanoja input[type=range].metanoja-bg-slider::-ms-thumb {
+    background: linear-gradient(180deg, rgb(97, 177, 169) 0%, rgb(97, 177, 169) 50%, rgb(219, 140, 93) 50%, rgb(219, 140, 93) 100%);
+}
+
+.metanoja input[type=range].radial-ellipse-width-slider::-webkit-slider-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/metanoja-light-icon.png');
+    background-size: contain;
+}
+
+.metanoja input[type=range].radial-ellipse-width-slider::-moz-range-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/metanoja-light-icon.png');
+    background-size: contain;
+}
+
+.metanoja input[type=range].radial-ellipse-width-slider::-ms-thumb {
+    background-image: url('https://web.archive.org/web/20220711004131im_/http://formaaktywna.pl/animacje/img/metanoja-light-icon.png');
+    background-size: contain;
+}
+
+.metanoja .radial-ellipse {
+    top: 0;
+    height: 100%;
+    width: 0;
+    content: "";
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    background-image: radial-gradient(ellipse farthest-side, #fff, transparent);
+    transform: rotate(90deg);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.radial-ellipse-width-slider {
+    width: 100%;
+}
+
+/* .box-wrapper {
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    margin: 200px auto;
+}
+
+
+.box {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-first {
+    left: 0;
+    background: #AD8868;
+    z-index: 1;
+}
+
+.box-second {
+    left: 20%;
+    background: #b39d98;
+    z-index: 1;
+}
+
+.box-third {
+    left: 40%;
+    z-index: 3;
+}
+
+.box-fourth {
+    left: 60%;
+    background: #6BA0CF;
+    z-index: 1;
+}
+
+.box-fift {
+    left: 80%;
+    background: #8bacc2;
+    z-index: 1;
+}
+
+.box-float {
+    left: 40%;
+    background: transparent;
+    z-index: 2;
+    transition: 1s all;
+    -webkit-transition: 0.3s left;
+    -moz-transition: 0.3s left;
+    -ms-transition: 0.3s left;
+    -o-transition: 0.3s left;
+}
+
+.float-slider {
+    position: absolute;
+    bottom: -100px;
+    left: 10%;
+    width: 80%;
+} */
+
+
+/* range input */
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    height: 40px;
+    margin: 5px auto;
+}
+
+.controls input[type=range] {
+    height: 40px;
+    margin: 5px auto;
+}
+
+
+input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 1);
+    margin-top: -17px;
+}
+
+input[type=range].metanoja-bg-slider::-webkit-slider-thumb,
+input[type=range].light-bg-slider::-webkit-slider-thumb,
+input[type=range].rotate-circle-line::-webkit-slider-thumb {
+    border-radius: 0;
+}
+
+input[type=range].metanoja-bg-slider::-moz-range-thumb,
+input[type=range].light-bg-slider::-moz-range-thumb,
+input[type=range].rotate-circle-line::-moz-range-thumb {
+    border-radius: 0;
+}
+
+input[type=range].metanoja-bg-slider::-ms-thumb,
+input[type=range].light-bg-slider::-ms-thumb,
+input[type=range].rotate-circle-line::-ms-thumb {
+    border-radius: 0;
+}
+
+input[type=range].rotate-circle-line::-webkit-slider-thumb {
+    height: 40px;
+    width: 5px;
+    margin-top: -18px;
+}
+
+input[type=range].rotate-circle-line::-moz-range-thumb {
+    height: 40px;
+    width: 5px;
+    margin-top: -18px;
+}
+
+input[type=range].rotate-circle-line::-ms-thumb {
+    height: 40px;
+    width: 5px;
+    margin-top: -18px;
+}
+
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+input[type=range]::-moz-range-track {
+    height: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+input[type=range]::-ms-track {
+    height: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+}
+
+
+.transform-circle .default.circle-left,
+.transform-circle .default.circle-line,
+.transform-circle .default.circle-right {
+    position: absolute;
+    right: -80px;
+    top: 10px;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .title {
+        margin-top: 40px;
+    }
+
+    #logos {
+        height: 100%;
+        max-height: initial;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .objects-panel {
+        width: 100vw;
+        height: 24vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        overflow-x: scroll;
+        justify-content: unset;
+        flex-wrap: nowrap;
+        order: 2;
+        /* margin-bottom: 50px; */
+    }
+
+    .objects-panel .rings,
+    .objects-panel .circles {
+        width: auto;
+        height: 100%;
+        flex-direction: row;
+        position: relative;
+        padding: 0;
+    }
+
+    .objects-panel .object {
+        position: relative;
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .radial,
+    .transform-circle,
+    .precyzja,
+    .metanoja {
+        max-height: initial;
+        width: 100%;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .sliders-wrapper,
+    .transform-circle .sliders-wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .radial .animation {
+        width: auto;
+        height: auto;
+    }
+
+    .radial .controls {
+        height: auto;
+        width: 100%;
+    }
+
+    .radial .controls .radial-ellipse-rotate-slider,
+    .radial .controls .radial-ellipse-width-slider {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .radial .controls .rotate {
+        position: relative;
+        right: 0;
+        width: 20%;
+    }
+
+    .radial .animation,
+    .transform-circle .animation,
+    .precyzja .animation,
+    .metanoja .animation {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .rozdzielnosc-img {
+        margin-bottom: 40px;
+    }
+
+    .rotate-slider-wrapper {
+        width: 100%;
+    }
+
+    .precyzja .slider-wrapper,
+    .metanoja .rotate-slider-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        margin: 40px auto;
+        position: relative;
+        justify-content: center;
+    }
+
+    .radial .controls {
+        margin-right: 0;
+    }
+
+    #logos .content-wrapper {
+        flex-direction: column;
+    }
+
+    .objects-panel-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .objects-panel-wrapper .title {
+        width: 40vw;
+        order: 1;
+        padding-bottom: 0;
+    }
+
+    .objects-panel-wrapper .title:before {
+        top: auto;
+        bottom: -35px;
+        border-left: 20vw solid transparent;
+        border-right: 20vw solid transparent;
+        border-top: 35px solid #fff;
+        border-bottom: 0;
+    }
+
+    #logos .box-wrapper .title {
+        position: absolute;
+        bottom: -40px;
+        top: auto;
+    }
+
+    .box-wrapper {
+        height: auto;
+        margin-left: 2vw;
+    }
+
+    .box {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .box-float {
+        top: 40vw;
+        left: 40vw;
+    }
+
+    .box-seventh,
+    .box-eight,
+    .box-ninth {
+        display: none;
+    }
+
+    .box-wrapper .float-slider-x,
+    .box-wrapper .float-slider-y {
+        display: none !important;
+    }
+
+    .metanoja .animation {
+        width: 70vw;
+        height: 70vw;
+        /* margin-top: -100px; */
+        margin-top: 0;
+    }
+
+    .metanoja .title {
+        position: relative;
+        bottom: 0;
+    }
+
+    .metanoja .sliders-wrapper {
+        width: 60%;
+        right: unset;
+        position: relative;
+        bottom: 0;
+    }
+
+    .precyzja .sliders-wrapper {
+        width: 60%;
+        position: relative;
+        margin-right: auto;
+        bottom: 0;
+    }
+
+    .rotate-slider-wrapper .default {
+        right: -70px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .radial,
+    .transform-circle,
+    .precyzja,
+    .metanoja {
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .title {
+        margin: 0;
+        position: absolute;
+        top: -80px;
+    }
+
+    .precyzja .title,
+    .metanoja .title {
+        position: absolute;
+        top: 0;
+    }
+
+    .objects-panel-wrapper .title {
+        top: 0;
+        width: 80vw;
+    }
+
+    .objects-panel-wrapper .title:before {
+        border-left: 40vw solid transparent;
+        border-right: 40vw solid transparent;
+    }
+
+    #logos .box-wrapper .title {
+        position: absolute;
+        top: -110vw;
+        width: 200px;
+        left: calc(50vw - 100px);
+        text-align: center;
+        height: 40px;
+    }
+
+    #logos,
+    .precyzja {
+        margin-bottom: 30vh;
+    }
+
+    .transform-circle .default.circle-left,
+    .transform-circle .default.circle-line,
+    .transform-circle .default.circle-right,
+    .rotate-slider-wrapper .default {
+        right: -62px;
+        padding: 0;
+    }
+}
+/*
+     FILE ARCHIVED ON 00:41:31 Jul 11, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:53:23 Nov 19, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 110.869
+  exclusion.robots: 0.109
+  exclusion.robots.policy: 0.097
+  cdx.remote: 0.075
+  esindex: 0.011
+  LoadShardBlock: 69.505 (3)
+  PetaboxLoader3.datanode: 74.218 (4)
+  PetaboxLoader3.resolve: 60.374 (2)
+  load_resource: 134.323
+*/
