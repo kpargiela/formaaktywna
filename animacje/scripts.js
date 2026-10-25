@@ -23,6 +23,8 @@ let floatSliderY = document.getElementsByClassName('float-slider-y')[0];
 
 let floatBox = document.createElement('div');
 floatBox.classList.add('box', 'box-float');
+floatBox.style.touchAction = 'none'; // Zapobiega domyślnemu przewijaniu strony podczas dotyku na elemencie
+floatBox.style.cursor = 'move';
 
 let objectsArr = [];
 
@@ -97,13 +99,83 @@ Array.from(objectsArr).forEach(obj => {
         
     });
 
-    obj.sliderX.addEventListener('input', function (e) {
+        obj.sliderX.addEventListener('input', function (e) {
         obj.floatBox.style.left = this.value + '%';
     });
 
     obj.sliderY.addEventListener('input', function (e) {
         obj.floatBox.style.top = this.value + '%';
     });
+
+    // Obsługa przeciągania elementów (drag & drop) dla myszy i dotyku
+    let isDragging = false;
+    let startX, startY;
+    let startLeft, startTop;
+
+    function startDrag(e) {
+        if (e.target === obj.close) return;
+        isDragging = true;
+        let clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+        let clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+
+        startX = clientX;
+        startY = clientY;
+        
+        startLeft = parseFloat(obj.floatBox.style.left) || 33.33;
+        startTop = parseFloat(obj.floatBox.style.top) || 33.33;
+
+        document.addEventListener('touchmove', doDrag, {passive: false});
+        document.addEventListener('touchend', stopDrag);
+        document.addEventListener('mousemove', doDrag);
+        document.addEventListener('mouseup', stopDrag);
+    }
+
+    function doDrag(e) {
+        if (!isDragging) return;
+        if (e.cancelable) {
+            e.preventDefault(); 
+        }
+        
+        let clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+        let clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+
+        let deltaX = clientX - startX;
+        let deltaY = clientY - startY;
+
+        let rect = boxWrapper.getBoundingClientRect();
+        
+        let percentX = (deltaX / rect.width) * 100;
+        let percentY = (deltaY / rect.height) * 100;
+
+                let newLeft = startLeft + percentX;
+        let newTop = startTop + percentY;
+        
+        // Zabezpieczenie przed wyjściem poza wartości obsługiwane przez suwaki
+        let minX = parseFloat(obj.sliderX.min) || 0;
+        let maxX = parseFloat(obj.sliderX.max) || 100;
+        let minY = parseFloat(obj.sliderY.min) || 0;
+        let maxY = parseFloat(obj.sliderY.max) || 100;
+        
+        newLeft = Math.max(minX, Math.min(maxX, newLeft));
+        newTop = Math.max(minY, Math.min(maxY, newTop));
+        
+        obj.floatBox.style.left = newLeft + '%';
+        obj.floatBox.style.top = newTop + '%';
+        
+        obj.sliderX.value = newLeft;
+        obj.sliderY.value = newTop;
+    }
+
+    function stopDrag() {
+        isDragging = false;
+        document.removeEventListener('touchmove', doDrag);
+        document.removeEventListener('touchend', stopDrag);
+        document.removeEventListener('mousemove', doDrag);
+        document.removeEventListener('mouseup', stopDrag);
+    }
+
+    obj.floatBox.addEventListener('touchstart', startDrag, {passive: false});
+    obj.floatBox.addEventListener('mousedown', startDrag);
 
     obj.close.addEventListener('click', function (e) {
 
